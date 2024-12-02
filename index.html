@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Edukasi - 10 Pertanyaan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="question-box">
+            <div id="question" class="question">Pertanyaan akan muncul di sini</div>
+            <div class="options">
+                <button class="option" id="optionA" onclick="selectAnswer('A')">A. </button>
+                <button class="option" id="optionB" onclick="selectAnswer('B')">B. </button>
+                <button class="option" id="optionC" onclick="selectAnswer('C')">C. </button>
+                <button class="option" id="optionD" onclick="selectAnswer('D')">D. </button>
+            </div>
+        </div>
+        <div class="navigation">
+            <button onclick="prevQuestion()">Previous</button>
+            <button onclick="nextQuestion()">Next</button>
+        </div>
+        <div id="feedback" class="feedback"></div>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2024 Sekaewayan. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
